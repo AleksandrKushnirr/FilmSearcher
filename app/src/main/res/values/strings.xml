@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Film Searcher</string>
+    <string name="details">Details</string>
+    <string name="film_searcher">FILM SEARCHER</string>
+    <string name="developed_by_kushnir">developed by O. Kushnir</string>
+    <string name="about_app">About app</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="name">Name</string>
+    <string name="liked">Liked</string>
+    <string name="filters">Filters</string>
+    <string name="remind">Remind</string>
+    <string name="home">Home</string>
+    <string name="age_limit">Age limit</string>
+    <string name="_0">0+</string>
+    <string name="_6">6+</string>
+    <string name="_10">10</string>
+    <string name="_16">16+</string>
+    <string name="_18">18+</string>
+    <string name="show_films">Show films</string>
+    <string name="share">Share</string>
+    <string name="description">Description</string>
+    <string name="genre_">Genre:</string>
+    <string name="counrty_">Country:</string>
+    <string name="year_">Year:</string>
+    <string name="ratingKino_">Kinopoisk rating:</string>
+    <string name="ratingImdb_">Imdb rating:</string>
+    <string name="ages_">Age:</string>
+    <string name="in_development">The functionality of a reminder about the release of a new film is being developed.</string>
+    <string name="help_you_to_find">Help you find a film</string>
+    <string name="genre">Genre</string>
+    <string name="country">Country</string>
+    <string name="year">Year</string>
+    <string name="_1950">1950</string>
+    <string name="_2020">2020</string>
+    <string name="ratingKino">Kinopoisk rating</string>
+    <string name="ratingImdb">Imdb rating</string>
+    <string name="ages">Age</string>
+    <string name="update_is_successful">Update is successful. Wait for you!</string>
+    <string name="film_removed_from_liked_list">Film removed from liked list.</string>
+    <string name="you_like_this_film">You like this film.</string>
+
+
+    <string-array name="countries_top">
+        <item>США</item>
+        <item>Россия</item>
+        <item>СССР</item>
+        <item>Франция</item>
+        <item>Италия</item>
+        <item>Испания</item>
+        <item>Великобритания</item>
+        <item>Германия</item>
+        <item>Япония</item>
+        <item>Украина</item>
+        <item>Другие</item>
+    </string-array>
+
+    <string-array name="genres">
+        <item>Аниме</item>
+        <item>Боевик</item>
+        <item>Биография</item>
+        <item>Вестерн</item>
+        <item>Военный</item>
+        <item>Детектив</item>
+        <item>Документальный</item>
+        <item>Драма</item>
+        <item>История</item>
+        <item>Комедия</item>
+        <item>Криминал</item>
+        <item>Мелодрама</item>
+        <item>Музыка</item>
+        <item>Мультфильм</item>
+        <item>Мюзикл</item>
+        <item>Приключения</item>
+        <item>Семейный</item>
+        <item>Спорт</item>
+        <item>Триллер</item>
+        <item>Ужасы</item>
+        <item>Фантастика</item>
+        <item>Фильм-нуар</item>
+        <item>Фэнтези</item>
+    </string-array>
+
+    <string-array name="age_limit_list">
+        <item>0+</item>
+        <item>6+</item>
+        <item>12+</item>
+        <item>16+</item>
+        <item>18+</item>
+    </string-array>
+
+
+</resources>
+

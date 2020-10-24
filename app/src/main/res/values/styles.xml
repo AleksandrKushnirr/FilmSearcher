@@ -1,0 +1,27 @@
+<resources>
+
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">#C56000</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorButtonNormal">@color/main_brown</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorTertiary">@color/primary_text</item>
+        <item name="android:textColorPrimaryInverse">@color/white_text</item>
+        <item name="android:textColorSecondary">@color/icons</item>
+    </style>
+
+    <style name="MyAppThemeMaterial" parent="Theme.MaterialComponents">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorButtonNormal">@color/main_brown</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorTertiary">@color/primary_text</item>
+        <item name="android:textColorPrimaryInverse">@color/white_text</item>
+        <item name="android:textColorSecondary">@color/icons</item>
+    </style>
+
+</resources>

@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Film Searcher</string>
+    <string name="details">Подробнее</string>
+    <string name="film_searcher">FILM SEARCHER</string>
+    <string name="developed_by_kushnir">Разработал Кушнир А.</string>
+    <string name="about_app">О приложении</string>
+    <string name="drawer_open">Открыть</string>
+    <string name="drawer_close">Закрыть</string>
+    <string name="name">Название</string>
+    <string name="liked">Избранное</string>
+    <string name="filters">Фильтры</string>
+    <string name="remind">Напомнить</string>
+    <string name="home">Домой</string>
+    <string name="age_limit">Возрастной лимит</string>
+    <string name="_0">0+</string>
+    <string name="_6">6+</string>
+    <string name="_16">16+</string>
+    <string name="_18">18+</string>
+    <string name="show_films">Показать фильмы</string>
+    <string name="share">Поделиться</string>
+    <string name="description">Описание</string>
+    <string name="genre_">Жанр:</string>
+    <string name="counrty_">Страна:</string>
+    <string name="year_">Год:</string>
+    <string name="ratingKino_">Рейтинг Кинопоиска:</string>
+    <string name="ratingImdb_">Рейтинг Imdb:</string>
+    <string name="ages_">Возраст:</string>
+    <string name="in_development">Функционал напоминания о выходе нового фильма разрабатывается.</string>
+    <string name="help_you_to_find">Поможет тебе найти фильм</string>
+    <string name="_1950">1950</string>
+    <string name="_2020">2020</string>
+
+    <string-array name="countries_top">
+        <item>США</item>
+        <item>Россия</item>
+        <item>СССР</item>
+        <item>Франция</item>
+        <item>Италия</item>
+        <item>Испания</item>
+        <item>Великобритания</item>
+        <item>Германия</item>
+        <item>Япония</item>
+        <item>Украина</item>
+        <item>Другие</item>
+    </string-array>
+
+    <string-array name="genres">
+        <item>Аниме</item>
+        <item>Боевик</item>
+        <item>Биография</item>
+        <item>Вестерн</item>
+        <item>Военный</item>
+        <item>Детектив</item>
+        <item>Документальный</item>
+        <item>Драма</item>
+        <item>История</item>
+        <item>Комедия</item>
+        <item>Криминал</item>
+        <item>Мелодрама</item>
+        <item>Музыка</item>
+        <item>Мультфильм</item>
+        <item>Мюзикл</item>
+        <item>Приключения</item>
+        <item>Семейный</item>
+        <item>Спорт</item>
+        <item>Триллер</item>
+        <item>Ужасы</item>
+        <item>Фантастика</item>
+        <item>Фильм-нуар</item>
+        <item>Фэнтези</item>
+    </string-array>
+
+    <string-array name="age_limit_list">
+        <item>0+</item>
+        <item>6+</item>
+        <item>12+</item>
+        <item>16+</item>
+        <item>18+</item>
+    </string-array>
+    <string name="_10">10</string>
+    <string name="country">Страна</string>
+    <string name="genre">Жанр</string>
+    <string name="year">Год</string>
+    <string name="ratingKino">Рейтинг Кинопоиска</string>
+    <string name="ratingImdb">Рейтинг Imdb</string>
+    <string name="ages">Возраст</string>
+    <string name="update_is_successful">Обновление успешно. Ждем тебя!</string>
+    <string name="film_removed_from_liked_list">Фильм удален из избранного.</string>
+    <string name="you_like_this_film">Вам понравился этот фильм.</string>
+
+
+</resources>
+

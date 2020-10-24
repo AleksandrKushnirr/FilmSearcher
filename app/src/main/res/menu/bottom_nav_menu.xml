@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_all"
+        android:icon="@drawable/icon_home"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/navigation_add"
+        android:icon="@drawable/ic_remind"
+        android:title="@string/remind"/>
+    <item
+        android:id="@+id/navigation_liked"
+        android:icon="@drawable/icon_like"
+        android:title="@string/liked"/>
+</menu>
