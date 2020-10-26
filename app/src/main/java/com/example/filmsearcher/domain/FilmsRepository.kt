@@ -14,6 +14,6 @@ interface FilmsRepository {
     fun deleteFilmFromDB(film: Film)
 
     // web
-    fun loadNewFilms()
+    suspend fun loadNewFilms()
 
 }

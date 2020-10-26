@@ -6,6 +6,7 @@ import androidx.work.OneTimeWorkRequest
 import androidx.work.WorkManager
 import com.example.filmsearcher.App
 import com.example.filmsearcher.UpdateDBWorker
+import com.example.filmsearcher.data.web.pojo.FilmJsonData
 import com.example.filmsearcher.domain.FilmsRepository
 import com.example.filmsearcher.domain.entities.Film
 import javax.inject.Inject
@@ -25,12 +26,19 @@ class FilmsRepositoryImpl @Inject constructor() : FilmsRepository {
     override fun deleteFilmFromDB(film: Film) = dao.delete(film)
 
     // web
-    override fun loadNewFilms(){
+    private val api = App.instance.daggerComponent.getFilmApiService()
+
+    override suspend fun loadNewFilms(){
+        val response = api.getFilmsWithRating((290..100000).random()).await()
+        val film = Film(response)
+        /*
         val constraints = Constraints.Builder().setRequiredNetworkType(NetworkType.CONNECTED).build()
         val loadFilmsRequest = OneTimeWorkRequest.Builder(UpdateDBWorker::class.java)
             .setConstraints(constraints)
             .addTag("loadFilms")
             .build()
         WorkManager.getInstance().enqueue(loadFilmsRequest)
+
+         */
     }
 }

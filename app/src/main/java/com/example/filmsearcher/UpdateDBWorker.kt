@@ -25,7 +25,7 @@ class UpdateDBWorker(
     private val dao = App.instance.daggerComponent.getFilmDao()
 
     override fun doWork(): Result {
-        dao.deleteAllRows()
+        /*dao.deleteAllRows()
 
         for(i in 1..1000) {
             try {
@@ -39,7 +39,11 @@ class UpdateDBWorker(
             } catch (e: Exception) { Log.d("MyLog", e.printStackTrace().toString()) }
         }
         showNotification("Film Searcher", "Обновление успешно. Ждем тебя!", applicationContext)
+
+         */
         return Result.success()
+
+
     }
 
     private fun showNotification(

@@ -2,6 +2,7 @@ package com.example.filmsearcher.di
 
 import com.example.filmsearcher.App
 import com.example.filmsearcher.data.web.FilmsApiService
+import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
@@ -22,13 +23,13 @@ class RetrofitModule {
     @Singleton
     fun provideRetrofit(
         okHttpClient: OkHttpClient,
-        rxJava2CallAdapterFactory: RxJava2CallAdapterFactory,
+        coroutineCallAdapterFactory: CoroutineCallAdapterFactory,
         gsonConverterFactory: GsonConverterFactory
     ): Retrofit {
         return Retrofit.Builder()
             .client(okHttpClient)
             .baseUrl(App.BASE_URL)
-            .addCallAdapterFactory(rxJava2CallAdapterFactory)
+            .addCallAdapterFactory(coroutineCallAdapterFactory)
             .addConverterFactory(gsonConverterFactory)
             .build()
     }
@@ -36,6 +37,11 @@ class RetrofitModule {
     @Provides
     @Singleton
     fun provideRxJava2CallAdapterFactory(): RxJava2CallAdapterFactory = RxJava2CallAdapterFactory.create()
+
+    @Provides
+    @Singleton
+    fun provideCoroutineCallAdapterFactory(): CoroutineCallAdapterFactory = CoroutineCallAdapterFactory()
+
 
     @Provides
     @Singleton
