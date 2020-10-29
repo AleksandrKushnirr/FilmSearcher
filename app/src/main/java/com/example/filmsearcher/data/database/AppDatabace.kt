@@ -6,14 +6,16 @@ import androidx.room.TypeConverter
 import androidx.room.TypeConverters
 import com.example.filmsearcher.domain.entities.Film
 import com.example.filmsearcher.domain.entities.Filter
+import com.example.filmsearcher.domain.entities.Reminder
 import com.google.gson.Gson
 
 
-@Database(entities = [Film::class, Filter::class], version = 20)
+@Database(entities = [Film::class, Filter::class, Reminder::class], version = 21)
 @TypeConverters(MyConverters::class)
 abstract class AppDatabase : RoomDatabase(){
     abstract fun filmDao(): FilmDao
     abstract fun filterDao(): FilterDao
+    abstract fun reminderDao(): ReminderDao
 }
 
 class MyConverters {

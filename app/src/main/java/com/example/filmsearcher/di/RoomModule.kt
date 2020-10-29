@@ -5,6 +5,7 @@ import androidx.room.Room
 import com.example.filmsearcher.data.database.AppDatabase
 import com.example.filmsearcher.data.database.FilmDao
 import com.example.filmsearcher.data.database.FilterDao
+import com.example.filmsearcher.data.database.ReminderDao
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -29,5 +30,9 @@ class RoomModule (mAppContext: Application) {
     @Singleton
     @Provides
     fun providesFilterDao(appDatabase: AppDatabase): FilterDao = appDatabase.filterDao()
+
+    @Singleton
+    @Provides
+    fun providesReminderDao(appDatabase: AppDatabase): ReminderDao = appDatabase.reminderDao()
 
 }

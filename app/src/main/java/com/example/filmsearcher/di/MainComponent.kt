@@ -6,6 +6,7 @@ import com.example.filmsearcher.data.FilterRepositoryImpl
 import com.example.filmsearcher.data.database.AppDatabase
 import com.example.filmsearcher.data.database.FilmDao
 import com.example.filmsearcher.data.database.FilterDao
+import com.example.filmsearcher.data.database.ReminderDao
 import com.example.filmsearcher.data.web.FilmsApiService
 import com.example.filmsearcher.domain.MainInteractor
 import dagger.Component
@@ -22,6 +23,7 @@ interface MainComponent {
     fun getAppContext(): Application
     fun getFilmDao(): FilmDao
     fun getFilterDao(): FilterDao
+    fun getReminderDao(): ReminderDao
     fun getAppDatabase(): AppDatabase
 
     fun getFilmApiService(): FilmsApiService
