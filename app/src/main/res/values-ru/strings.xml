@@ -25,7 +25,7 @@
     <string name="ratingKino_">Рейтинг Кинопоиска:</string>
     <string name="ratingImdb_">Рейтинг Imdb:</string>
     <string name="ages_">Возраст:</string>
-    <string name="in_development">Функционал напоминания о выходе нового фильма разрабатывается.</string>
+    <string name="add_a_new_reminder">Добавьте новое напоминание…</string>
     <string name="help_you_to_find">Поможет тебе найти фильм</string>
     <string name="_1950">1950</string>
     <string name="_2020">2020</string>

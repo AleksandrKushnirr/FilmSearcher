@@ -1,4 +1,4 @@
-package com.example.filmsearcher.presentation.recycler
+package com.example.filmsearcher.presentation.recycler.films
 
 import android.content.Context
 import android.view.LayoutInflater

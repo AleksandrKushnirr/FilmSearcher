@@ -26,7 +26,7 @@
     <string name="ratingKino_">Kinopoisk rating:</string>
     <string name="ratingImdb_">Imdb rating:</string>
     <string name="ages_">Age:</string>
-    <string name="in_development">The functionality of a reminder about the release of a new film is being developed.</string>
+    <string name="add_a_new_reminder">Add a new reminder…</string>
     <string name="help_you_to_find">Help you find a film</string>
     <string name="genre">Genre</string>
     <string name="country">Country</string>
@@ -39,6 +39,7 @@
     <string name="update_is_successful">Update is successful. Wait for you!</string>
     <string name="film_removed_from_liked_list">Film removed from liked list.</string>
     <string name="you_like_this_film">You like this film.</string>
+    <string name="date">Date</string>
 
 
     <string-array name="countries_top">

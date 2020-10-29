@@ -14,8 +14,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.filmsearcher.*
-import com.example.filmsearcher.presentation.recycler.EndlessRecyclerOnScrollListener
-import com.example.filmsearcher.presentation.recycler.FilmsAdapter
+import com.example.filmsearcher.presentation.recycler.films.EndlessRecyclerOnScrollListener
+import com.example.filmsearcher.presentation.recycler.films.FilmsAdapter
 import com.example.filmsearcher.presentation.viewmodel.AllFragmentViewModel
 
 class AllFragment : Fragment() {

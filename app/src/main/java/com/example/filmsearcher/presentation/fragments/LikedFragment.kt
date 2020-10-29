@@ -9,7 +9,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.example.filmsearcher.R
-import com.example.filmsearcher.presentation.recycler.FilmsAdapter
+import com.example.filmsearcher.presentation.recycler.films.FilmsAdapter
 import com.example.filmsearcher.presentation.viewmodel.AllFragmentViewModel
 
 class LikedFragment : Fragment() {

@@ -65,15 +65,40 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayoutInformation" />-->
 
     <TextView
-        android:id="@+id/textViewEnterInfo"
+        android:id="@+id/text_title"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="@string/in_development"
-        android:textSize="16sp"
         android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/add_a_new_reminder"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gray_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_remind"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/card_view_remind">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.filmsearcher.presentation.recycler
+package com.example.filmsearcher.presentation.recycler.films
 
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
