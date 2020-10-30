@@ -2,6 +2,7 @@ package com.example.filmsearcher.domain
 
 import com.example.filmsearcher.domain.entities.Film
 import com.example.filmsearcher.domain.entities.Filter
+import com.example.filmsearcher.domain.entities.Reminder
 import java.lang.Exception
 import java.util.*
 import javax.inject.Inject
@@ -69,6 +70,10 @@ class MainInteractor @Inject constructor(
             filterRepository.insertFilter(filter)
         }
         return filter
+    }
+
+    fun startAlarm(reminder: Reminder){
+        
     }
 
 }
