@@ -8,7 +8,7 @@ import android.net.NetworkCapabilities
 import android.widget.Toast
 
 
-class MyReceiver : BroadcastReceiver() {
+class InternetConnectionReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
         if (!isInternetAvailable(context)) {

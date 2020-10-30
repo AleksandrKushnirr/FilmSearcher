@@ -24,7 +24,7 @@ class AllFragment : Fragment() {
     private lateinit var layoutManager: LinearLayoutManager
     private lateinit var filmsAdapter: FilmsAdapter
     private lateinit var viewModel: AllFragmentViewModel
-    private val receiver = MyReceiver()
+    private val receiver = InternetConnectionReceiver()
 
     private lateinit var handler: Handler
 
