@@ -9,6 +9,7 @@ import com.example.filmsearcher.data.database.FilterDao
 import com.example.filmsearcher.data.database.ReminderDao
 import com.example.filmsearcher.data.web.FilmsApiService
 import com.example.filmsearcher.domain.MainInteractor
+import com.example.filmsearcher.domain.RemindersRepository
 import dagger.Component
 import javax.inject.Singleton
 
@@ -19,6 +20,7 @@ interface MainComponent {
     fun getInteractor(): MainInteractor
     fun getRepository(): FilmsRepositoryImpl
     fun getFilterRepository(): FilterRepositoryImpl
+    fun getRemindersRepository(): RemindersRepository
 
     fun getAppContext(): Application
     fun getFilmDao(): FilmDao

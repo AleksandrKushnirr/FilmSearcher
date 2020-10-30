@@ -38,7 +38,6 @@ class RemindFragment : Fragment() {
         val titleText = view.findViewById<TextView>(R.id.text_title)
 
         initRecycler(view)
-        //remindersAdapter.setItems(mutableListOf(Reminder(0,"Мстители", 55545644), Reminder(0,"1+1", 5664545644)))
         viewModel = ViewModelProvider(this).get(RemindFragmentViewModel::class.java)
         viewModel.listOfRemindersLiveData.observe(viewLifecycleOwner, Observer {
             remindersAdapter.setItems(it)
@@ -49,11 +48,9 @@ class RemindFragment : Fragment() {
 
         val fab = view.findViewById<FloatingActionButton>(R.id.fab_add_reminder)
         fab.setOnClickListener {
-
             activity?.supportFragmentManager?.commit {
                 replace<AddReminderFragment>(R.id.container_frame)
             }
-            
         }
 
         return view

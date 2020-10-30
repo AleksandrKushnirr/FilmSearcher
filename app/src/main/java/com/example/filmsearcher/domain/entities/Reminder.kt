@@ -6,7 +6,7 @@ import java.util.*
 
 @Entity
 data class Reminder (
-    @PrimaryKey (autoGenerate = false) val id: Int = 0,
+    @PrimaryKey (autoGenerate = true) val id: Int = 0,
     var name: String,
     var date: Long
 )
