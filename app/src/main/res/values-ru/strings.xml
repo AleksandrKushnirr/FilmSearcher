@@ -87,6 +87,10 @@
     <string name="update_is_successful">Обновление успешно. Ждем тебя!</string>
     <string name="film_removed_from_liked_list">Фильм удален из избранного.</string>
     <string name="you_like_this_film">Вам понравился этот фильм.</string>
+    <string name="date">Дата</string>
+    <string name="new_reminder">Новое напоминание</string>
+    <string name="save">Сохранить</string>
+    <string name="name_of_film">Имя фильма</string>
 
 
 </resources>

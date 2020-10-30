@@ -40,6 +40,9 @@
     <string name="film_removed_from_liked_list">Film removed from liked list.</string>
     <string name="you_like_this_film">You like this film.</string>
     <string name="date">Date</string>
+    <string name="new_reminder">New reminder</string>
+    <string name="save">Save</string>
+    <string name="name_of_film">Name of film</string>
 
 
     <string-array name="countries_top">

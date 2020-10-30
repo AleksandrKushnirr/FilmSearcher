@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.commit
+import androidx.fragment.app.replace
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -45,15 +47,13 @@ class RemindFragment : Fragment() {
 
         viewModel.showReminders()
 
-        val listReminders = mutableListOf<Reminder>()
-        var counter = 1
         val fab = view.findViewById<FloatingActionButton>(R.id.fab_add_reminder)
         fab.setOnClickListener {
-            if (counter == 1) titleText.visibility = View.GONE
-            listReminders.add(Reminder(counter, "Film $counter", counter*1111111.toLong() ))
-            remindersAdapter.setItems(listReminders)
-            remindersAdapter.notifyDataSetChanged()
-            counter++
+
+            activity?.supportFragmentManager?.commit {
+                replace<AddReminderFragment>(R.id.container_frame)
+            }
+            
         }
 
         return view
