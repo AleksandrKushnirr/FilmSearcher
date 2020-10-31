@@ -43,6 +43,8 @@
     <string name="new_reminder">New reminder</string>
     <string name="save">Save</string>
     <string name="name_of_film">Name of film</string>
+    <string name="today_is_your_film">Today is your film</string>
+    <string name="do_not_miss_it">Don\'t miss it!</string>
 
 
     <string-array name="countries_top">

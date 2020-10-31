@@ -91,6 +91,8 @@
     <string name="new_reminder">Новое напоминание</string>
     <string name="save">Сохранить</string>
     <string name="name_of_film">Имя фильма</string>
+    <string name="today_is_your_film">Сегодня будет твой фильм</string>
+    <string name="do_not_miss_it">Не пропусти его!</string>
 
 
 </resources>

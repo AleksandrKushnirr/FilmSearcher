@@ -17,7 +17,7 @@ class NotificationReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
         if (intent.action == "updatedDatabase"){
-            showNotification("Film Searcher", "Обновление успешно. Ждем тебя!", context)
+            showNotification(context.resources.getString(R.string.app_name), context.resources.getString(R.string.update_is_successful), context)
         }
     }
 
