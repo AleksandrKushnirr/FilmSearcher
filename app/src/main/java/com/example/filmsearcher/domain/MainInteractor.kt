@@ -1,5 +1,11 @@
 package com.example.filmsearcher.domain
 
+import android.app.AlarmManager
+import android.app.PendingIntent
+import android.content.Context.ALARM_SERVICE
+import android.content.Intent
+import com.example.filmsearcher.App
+import com.example.filmsearcher.NotificationReceiver
 import com.example.filmsearcher.domain.entities.Film
 import com.example.filmsearcher.domain.entities.Filter
 import com.example.filmsearcher.domain.entities.Reminder
@@ -9,8 +15,11 @@ import javax.inject.Inject
 
 class MainInteractor @Inject constructor(
     private val repository: FilmsRepository,
-    private val filterRepository: FilterRepository
+    private val filterRepository: FilterRepository,
+    private val remindersRepository: RemindersRepository
 ) {
+
+    private val context = App.instance.applicationContext
 
     fun getFilms(filter: Filter): List<Film> {
 
@@ -73,7 +82,15 @@ class MainInteractor @Inject constructor(
     }
 
     fun startAlarm(reminder: Reminder){
-        
+        val alarmManager: AlarmManager = App.instance.applicationContext.getSystemService(ALARM_SERVICE) as AlarmManager
+        alarmManager.set(AlarmManager.RTC, reminder.date, createPendingIntent(reminder.name))
+        //alarmManager.set(AlarmManager.RTC, System.currentTimeMillis() + 3000, createPendingIntent(reminder.name))
+    }
+
+    private fun createPendingIntent(action: String): PendingIntent{
+        val intent = Intent(context, NotificationReceiver::class.java)
+        intent.action = action
+        return PendingIntent.getBroadcast(context, 0, intent, 0)
     }
 
 }
