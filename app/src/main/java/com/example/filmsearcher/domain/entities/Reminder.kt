@@ -2,7 +2,6 @@ package com.example.filmsearcher.domain.entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import java.util.*
 
 @Entity
 data class Reminder (
@@ -10,3 +9,4 @@ data class Reminder (
     var name: String,
     var date: Long
 )
+

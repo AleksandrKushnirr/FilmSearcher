@@ -18,6 +18,9 @@ class NotificationReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
         if (intent.action == "updatedDatabase"){
             showNotification(context.resources.getString(R.string.app_name), context.resources.getString(R.string.update_is_successful), context)
+        }else{
+            val message = "${context.resources.getString(R.string.today_is_your_film)} ${intent.action}. ${context.resources.getString(R.string.do_not_miss_it)}"
+            showNotification(context.resources.getString(R.string.app_name), message, context)
         }
     }
 
@@ -50,7 +53,5 @@ class NotificationReceiver : BroadcastReceiver() {
     }
 
     private fun createID(): Int = Integer.parseInt(
-        SimpleDateFormat("ddHHmmss", Locale.ENGLISH).format(
-            Date()
-        ))
+        SimpleDateFormat("ddHHmmss", Locale.ENGLISH).format(Date()))
 }

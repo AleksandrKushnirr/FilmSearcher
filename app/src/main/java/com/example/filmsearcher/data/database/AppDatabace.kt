@@ -10,7 +10,7 @@ import com.example.filmsearcher.domain.entities.Reminder
 import com.google.gson.Gson
 
 
-@Database(entities = [Film::class, Filter::class, Reminder::class], version = 22)
+@Database(entities = [Film::class, Filter::class, Reminder::class], version = 23)
 @TypeConverters(MyConverters::class)
 abstract class AppDatabase : RoomDatabase(){
     abstract fun filmDao(): FilmDao
