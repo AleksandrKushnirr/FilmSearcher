@@ -1,5 +1,6 @@
 package com.example.filmsearcher.presentation.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -7,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
+import com.example.filmsearcher.NotificationReceiver
 import com.example.filmsearcher.R
 import com.example.filmsearcher.presentation.fragments.RemindFragment
 import com.example.filmsearcher.presentation.fragments.AllFragment

@@ -15,14 +15,11 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/MyAppTheme">
+
         <receiver
             android:name=".NotificationReceiver"
             android:enabled="true"
             android:exported="false">
-            <intent-filter>
-                <action android:name="updatedDatabase"/>
-            </intent-filter>
-
         </receiver>
 
         <activity android:name=".presentation.activities.DetailsActivity" />

@@ -19,7 +19,7 @@ class UpdateDBWorker(
     override fun doWork(): Result {
         dao.deleteAllRows()
 
-        for(i in 1..100) {
+        for(i in 1..1000) {
             try {
                 val response = api.getFilmsWithRating((290..100000).random()).execute()
                 if (response.isSuccessful) {
