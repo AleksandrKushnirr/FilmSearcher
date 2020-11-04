@@ -1,7 +1,6 @@
 package com.example.filmsearcher.data.database
 
 import androidx.room.*
-import com.example.filmsearcher.domain.entities.Filter
 import com.example.filmsearcher.domain.entities.Reminder
 
 @Dao

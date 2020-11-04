@@ -1,4 +1,4 @@
-package com.example.filmsearcher.presentation.recycler.reminds
+package com.example.filmsearcher.presentation.recycler.reminders
 
 import android.annotation.SuppressLint
 import android.content.Context

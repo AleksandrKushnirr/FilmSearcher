@@ -13,8 +13,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.filmsearcher.R
-import com.example.filmsearcher.domain.entities.Reminder
-import com.example.filmsearcher.presentation.recycler.reminds.RemindsAdapter
+import com.example.filmsearcher.presentation.recycler.reminders.RemindsAdapter
 import com.example.filmsearcher.presentation.viewmodel.RemindFragmentViewModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 

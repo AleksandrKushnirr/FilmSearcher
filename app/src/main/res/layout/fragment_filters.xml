@@ -128,7 +128,7 @@
 
                         <com.google.android.material.slider.RangeSlider
                             android:id="@+id/sliderYear"
-                            android:layout_width="320dp"
+                            android:layout_width="310dp"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:stepSize="1.0"
@@ -197,7 +197,7 @@
 
                         <com.google.android.material.slider.RangeSlider
                             android:id="@+id/sliderRating"
-                            android:layout_width="320dp"
+                            android:layout_width="310dp"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:stepSize="0.1"
@@ -266,7 +266,7 @@
 
                         <com.google.android.material.slider.RangeSlider
                             android:id="@+id/sliderRatingImdb"
-                            android:layout_width="320dp"
+                            android:layout_width="310dp"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:stepSize="0.1"
