@@ -93,6 +93,7 @@
     <string name="name_of_film">Имя фильма</string>
     <string name="today_is_your_film">Сегодня будет твой фильм</string>
     <string name="do_not_miss_it">Не пропусти его!</string>
+    <string name="no_internet_connection">Отсутствует интернет-соединение!</string>
 
 
 </resources>

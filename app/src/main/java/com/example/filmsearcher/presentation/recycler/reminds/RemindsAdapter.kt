@@ -20,6 +20,14 @@ class RemindsAdapter(
         notifyDataSetChanged()
     }
 
+
+    fun deleteItem(position: Int){
+        items.removeAt(position)
+        notifyItemRemoved(position)
+        notifyItemRangeChanged(position, itemCount)
+    }
+
+
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -33,6 +41,5 @@ class RemindsAdapter(
     override fun onBindViewHolder(holder: RemindsViewHolder, position: Int) {
         holder.bind(items[position], context)
     }
-
 
 }

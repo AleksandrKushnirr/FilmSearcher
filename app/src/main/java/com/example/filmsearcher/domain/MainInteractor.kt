@@ -83,14 +83,20 @@ class MainInteractor @Inject constructor(
 
     fun startAlarm(reminder: Reminder){
         val alarmManager: AlarmManager = App.instance.applicationContext.getSystemService(ALARM_SERVICE) as AlarmManager
-        alarmManager.set(AlarmManager.RTC, reminder.date, createPendingIntent(reminder.name))
-        //alarmManager.set(AlarmManager.RTC, System.currentTimeMillis() + 3000, createPendingIntent(reminder.name))
+        //alarmManager.set(AlarmManager.RTC, reminder.date, createPendingIntent(reminder.name))
+        alarmManager.set(AlarmManager.RTC, System.currentTimeMillis() + 5000, createPendingIntent(reminder.name))
     }
 
     private fun createPendingIntent(action: String): PendingIntent{
         val intent = Intent(context, NotificationReceiver::class.java)
         intent.action = action
         return PendingIntent.getBroadcast(context, 0, intent, 0)
+    }
+
+    fun stopAlarm(reminder: Reminder){
+        val alarmManager: AlarmManager = App.instance.applicationContext.getSystemService(ALARM_SERVICE) as AlarmManager
+        alarmManager.cancel(createPendingIntent(reminder.name))
+        remindersRepository.deleteByName(reminder.name)
     }
 
 }

@@ -45,6 +45,7 @@
     <string name="name_of_film">Name of film</string>
     <string name="today_is_your_film">Today is your film</string>
     <string name="do_not_miss_it">Don\'t miss it!</string>
+    <string name="no_internet_connection">No internet connection!</string>
 
 
     <string-array name="countries_top">

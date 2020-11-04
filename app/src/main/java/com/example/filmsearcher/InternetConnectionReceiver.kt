@@ -12,7 +12,7 @@ class InternetConnectionReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
         if (!isInternetAvailable(context)) {
-            Toast.makeText(context, "Отсутствует интернет-соединение!", Toast.LENGTH_LONG).show()
+            Toast.makeText(context, context.resources.getString(R.string.no_internet_connection), Toast.LENGTH_LONG).show()
         }
     }
 
