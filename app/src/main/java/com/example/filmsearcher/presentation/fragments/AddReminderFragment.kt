@@ -51,7 +51,7 @@ class AddReminderFragment: Fragment() {
     private fun dateStringToLong(year: Int, month: Int, dayOfMonth: Int): Long{
         val calendar = Calendar.getInstance()
         calendar.set(year, month, dayOfMonth)
-        return calendar.timeInMillis
+        return calendar.timeInMillis - 18000000
     }
 
 }
